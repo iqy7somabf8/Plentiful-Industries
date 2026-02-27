@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smoking",
+  "category": "misc",
+  "cookingtime": 20,
+  "experience": 0.5,
+  "group": "blootonium",
+  "ingredient": {
+    "item": "plentifulindustries:blootonium"
+  },
+  "result": {
+    "id": "plentifulindustries:blootonium_block"
+  }
+}

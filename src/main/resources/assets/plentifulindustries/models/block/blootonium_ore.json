@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "plentifulindustries:block/blootonium_ore"
+  }
+}

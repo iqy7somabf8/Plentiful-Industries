@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "plentifulindustries:raw_blootonium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "plentifulindustries:raw_blootonium"
+  }
+}

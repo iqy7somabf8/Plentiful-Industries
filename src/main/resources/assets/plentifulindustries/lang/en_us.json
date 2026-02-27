@@ -1,0 +1,12 @@
+{
+  "item.plentifulindustries.blootonium": "Blootonium",
+  "item.plentifulindustries.raw_blootonium" : "Raw Blootonium",
+
+  "block.plentifulindustries.blootonium_block": "Block of Blootonium",
+  "block.plentifulindustries.raw_blootonium_block": "Raw Block of Blootonium",
+  "block.plentifulindustries.blootonium_ore": "Blootonium Ore",
+  "block.plentifulindustries.blootonium_deepslate_ore": "Blootonium Deepslate Ore",
+
+  "creativetab.plentifulindustries.blootonium_items": "Blootonium Items",
+  "creativetab.plentifulindustries.blootonium_blocks": "Blootonium Blocks"
+}
