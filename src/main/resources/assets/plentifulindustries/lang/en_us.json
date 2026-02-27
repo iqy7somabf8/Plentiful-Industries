@@ -2,11 +2,26 @@
   "item.plentifulindustries.blootonium": "Blootonium",
   "item.plentifulindustries.raw_blootonium" : "Raw Blootonium",
 
+  "item.plentifulindustries.chisel": "Chisel",
+
+  "item.plentifulindustries.kohlrabi": "Kohlrabi",
+  "item.plentifulindustries.catalyst": "Catalyst",
+
   "block.plentifulindustries.blootonium_block": "Block of Blootonium",
   "block.plentifulindustries.raw_blootonium_block": "Raw Block of Blootonium",
   "block.plentifulindustries.blootonium_ore": "Blootonium Ore",
   "block.plentifulindustries.blootonium_deepslate_ore": "Blootonium Deepslate Ore",
 
+  "block.plentifulindustries.converter_block": "Converter",
+
   "creativetab.plentifulindustries.blootonium_items": "Blootonium Items",
-  "creativetab.plentifulindustries.blootonium_blocks": "Blootonium Blocks"
+  "creativetab.plentifulindustries.blootonium_blocks": "Blootonium Blocks",
+
+
+  "tooltip.plentifulindustries.kohlrabi": "Tastes a bit like Raw Fish. Yuck.",
+
+  "tooltip.plentifulindustries.chisel.shift_down": "Press §e[SHIFT]§r for more Information!",
+  "tooltip.plentifulindustries.chisel": "Changes certain Stones",
+
+  "tooltip.plentifulindustries.converter_block.tooltip": "A wonderful marvel of §9Magic§r"
 }

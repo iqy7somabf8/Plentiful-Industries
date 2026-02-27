@@ -22,6 +22,10 @@ public class ModCreativeModeTabs {
                       output.accept(ModItems.Blootonium.get());
                       output.accept(ModItems.Raw_Blootonium.get());
 
+                      output.accept(ModItems.CHISEL.get());
+
+                      output.accept(ModItems.KOHLRABI.get());
+                      output.accept(ModItems.CATALYST.get());
 
                     }).build());
     public static final RegistryObject<CreativeModeTab> BLOOTONIUM_BLOCKS_TAB = CREATIVE_MODE_TABS.register("blootonium_blocks_tab",
@@ -34,6 +38,8 @@ public class ModCreativeModeTabs {
 
                       output.accept(ModBlocks.BLOOTONIUM_ORE.get());
                       output.accept(ModBlocks.BLOOTONIUM_DEEPSLATE_ORE.get());
+
+                      output.accept(ModBlocks.CONVERTER_BLOCK.get());
 
                     }).build());
 

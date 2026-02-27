@@ -12,6 +12,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.xdbloo.plentifulIndustries.PlentifulIndustries;
+import net.xdbloo.plentifulIndustries.block.custom.ConverterBlock;
 import net.xdbloo.plentifulIndustries.item.ModItems;
 
 import java.util.function.Supplier;
@@ -33,6 +34,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> BLOOTONIUM_DEEPSLATE_ORE = registerBlock("blootonium_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(3, 6),BlockBehaviour.Properties.of()
                     .strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final RegistryObject<Block> CONVERTER_BLOCK = registerBlock("converter_block",
+            () -> new ConverterBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
 
 
 
