@@ -16,11 +16,11 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, PlentifulIndustries.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> BLOOTONIUM_ITEMS_TAB = CREATIVE_MODE_TABS.register("blootonium_items_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Blootonium.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BLOOTONIUM.get()))
                     .title(Component.translatable("creativetab.plentifulindustries.blootonium_items"))
                     .displayItems((itemDisplayParameters, output) -> {
-                      output.accept(ModItems.Blootonium.get());
-                      output.accept(ModItems.Raw_Blootonium.get());
+                      output.accept(ModItems.BLOOTONIUM.get());
+                      output.accept(ModItems.RAW_BLOOTONIUM.get());
 
                       output.accept(ModItems.CHISEL.get());
 

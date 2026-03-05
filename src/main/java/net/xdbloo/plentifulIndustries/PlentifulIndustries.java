@@ -51,8 +51,8 @@ public class PlentifulIndustries {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.Blootonium);
-            event.accept(ModItems.Raw_Blootonium);
+            event.accept(ModItems.BLOOTONIUM);
+            event.accept(ModItems.RAW_BLOOTONIUM);
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.BLOOTONIUM_BLOCK);
