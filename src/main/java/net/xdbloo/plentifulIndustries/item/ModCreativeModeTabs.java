@@ -41,6 +41,20 @@ public class ModCreativeModeTabs {
 
                       output.accept(ModBlocks.CONVERTER_BLOCK.get());
 
+                      output.accept(ModBlocks.BLOOTONIUM_STAIRS.get());
+                      output.accept(ModBlocks.BLOOTONIUM_SLAB.get());
+
+                      output.accept(ModBlocks.BLOOTONIUM_PRESSURE_PLATE.get());
+                      output.accept(ModBlocks.BLOOTONIUM_BUTTON.get());
+
+                      output.accept(ModBlocks.BLOOTONIUM_WALL.get());
+                      output.accept(ModBlocks.BLOOTONIUM_FENCE.get());
+                      output.accept(ModBlocks.BLOOTONIUM_FENCE_GATE.get());
+
+
+                      output.accept(ModBlocks.BLOOTONIUM_DOOR.get());
+                      output.accept(ModBlocks.BLOOTONIUM_TRAPDOOR.get());
+
                     }).build());
 
     public static void register(IEventBus eventBus) {
