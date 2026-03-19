@@ -13,6 +13,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.xdbloo.plentifulIndustries.PlentifulIndustries;
+import net.xdbloo.plentifulIndustries.block.custom.BlootoniumLampBlock;
 import net.xdbloo.plentifulIndustries.block.custom.ConverterBlock;
 import net.xdbloo.plentifulIndustries.item.ModItems;
 
@@ -63,6 +64,10 @@ public class ModBlocks {
             () -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
     public static final RegistryObject<TrapDoorBlock> BLOOTONIUM_TRAPDOOR = registerBlock("blootonium_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<Block> BLOOTONIUM_LAMP = registerBlock("blootonium_lamp",
+            () -> new BlootoniumLampBlock(BlockBehaviour.Properties.of().strength(3f)
+                    .lightLevel(state -> state.getValue(BlootoniumLampBlock.CLICKED) ? 15 : 0)));
 
 
 

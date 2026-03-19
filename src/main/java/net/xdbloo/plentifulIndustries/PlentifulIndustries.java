@@ -14,6 +14,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.xdbloo.plentifulIndustries.block.ModBlocks;
+import net.xdbloo.plentifulIndustries.component.ModDataComponentTypes;
 import net.xdbloo.plentifulIndustries.item.ModCreativeModeTabs;
 import net.xdbloo.plentifulIndustries.item.ModItems;
 import org.slf4j.Logger;
@@ -35,6 +36,8 @@ public class PlentifulIndustries {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModDataComponentTypes.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

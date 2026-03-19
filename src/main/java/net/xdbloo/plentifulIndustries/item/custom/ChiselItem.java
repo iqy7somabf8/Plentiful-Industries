@@ -18,6 +18,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.xdbloo.plentifulIndustries.block.ModBlocks;
+import net.xdbloo.plentifulIndustries.component.ModDataComponentTypes;
+import org.apache.commons.lang3.ObjectUtils;
 
 import java.util.List;
 import java.util.Map;
@@ -46,7 +48,10 @@ public class ChiselItem extends Item {
 
             pContext.getItemInHand().hurtAndBreak(1, ((ServerLevel) level), ((ServerPlayer) pContext.getPlayer()),
                     item -> pContext.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
+
             level.playSound(null, pContext.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
+
+            pContext.getItemInHand().set(ModDataComponentTypes.COORDS.get(), pContext.getClickedPos());
         }
 
         return InteractionResult.SUCCESS;
@@ -58,6 +63,10 @@ public class ChiselItem extends Item {
             pTooltipComponents.add(Component.translatable("tooltip.plentifulindustries.chisel"));
         } else {
             pTooltipComponents.add(Component.translatable("tooltip.plentifulindustries.chisel.shift_down"));
+        }
+
+        if(pStack.get(ModDataComponentTypes.COORDS.get()) != null) {
+            pTooltipComponents.add(Component.literal("Last Block changed at " + pStack.get(ModDataComponentTypes.COORDS.get())));
         }
 
         super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);

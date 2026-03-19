@@ -59,6 +59,30 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(pRecipeOutput, BLOOTONIUM_SMELTABLES, RecipeCategory.MISC, ModItems.BLOOTONIUM.get(), 0.5f, 200, "blootonium");
         oreBlasting(pRecipeOutput, BLOOTONIUM_SMELTABLES, RecipeCategory.MISC, ModItems.BLOOTONIUM.get(), 0.5f, 100, "blootonium");
+
+        stairBuilder(ModBlocks.BLOOTONIUM_STAIRS.get(), Ingredient.of(ModItems.BLOOTONIUM.get())).group("blootonium")
+                        .unlockedBy(getHasName(ModItems.BLOOTONIUM.get()), has(ModItems.BLOOTONIUM.get())).save(pRecipeOutput);
+
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOOTONIUM_SLAB.get(), ModItems.BLOOTONIUM.get());
+
+        buttonBuilder(ModBlocks.BLOOTONIUM_BUTTON.get(), Ingredient.of(ModItems.BLOOTONIUM.get())).group("blootonium")
+                .unlockedBy(getHasName(ModItems.BLOOTONIUM.get()), has(ModItems.BLOOTONIUM.get())).save(pRecipeOutput);
+        pressurePlate(pRecipeOutput, ModBlocks.BLOOTONIUM_PRESSURE_PLATE.get(), ModItems.BLOOTONIUM.get());
+
+        fenceBuilder(ModBlocks.BLOOTONIUM_FENCE.get(), Ingredient.of(ModItems.BLOOTONIUM.get())).group("blootonium")
+                .unlockedBy(getHasName(ModItems.BLOOTONIUM.get()), has(ModItems.BLOOTONIUM.get())).save(pRecipeOutput);
+
+        fenceGateBuilder(ModBlocks.BLOOTONIUM_FENCE_GATE.get(), Ingredient.of(ModItems.BLOOTONIUM.get())).group("blootonium")
+                .unlockedBy(getHasName(ModItems.BLOOTONIUM.get()), has(ModItems.BLOOTONIUM.get())).save(pRecipeOutput);
+
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOOTONIUM_WALL.get(), ModItems.BLOOTONIUM.get());
+
+        doorBuilder(ModBlocks.BLOOTONIUM_DOOR.get(), Ingredient.of(ModItems.BLOOTONIUM.get())).group("blootonium")
+                .unlockedBy(getHasName(ModItems.BLOOTONIUM.get()), has(ModItems.BLOOTONIUM.get())).save(pRecipeOutput);
+
+        trapdoorBuilder(ModBlocks.BLOOTONIUM_TRAPDOOR.get(), Ingredient.of(ModItems.BLOOTONIUM.get())).group("blootonium")
+                .unlockedBy(getHasName(ModItems.BLOOTONIUM.get()), has(ModItems.BLOOTONIUM.get())).save(pRecipeOutput);
+
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,

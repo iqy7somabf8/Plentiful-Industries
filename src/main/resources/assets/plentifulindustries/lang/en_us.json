@@ -14,6 +14,21 @@
 
   "block.plentifulindustries.converter_block": "Converter",
 
+  "block.plentifulindustries.blootonium_stairs": "Blootonium Stairs",
+  "block.plentifulindustries.blootonium_slab": "Blootonium Slab",
+
+  "block.plentifulindustries.blootonium_button": "Blootonium Button",
+  "block.plentifulindustries.blootonium_pressure_plate": "Blootonium Pressure Plate",
+
+  "block.plentifulindustries.blootonium_fence": "Blootonium Fence",
+  "block.plentifulindustries.blootonium_fence_gate": "Blootonium Fence Gate",
+  "block.plentifulindustries.blootonium_wall": "Blootonium Wall",
+
+  "block.plentifulindustries.blootonium_door": "Blootonium Door",
+  "block.plentifulindustries.blootonium_trapdoor": "Blootonium Trapdoor",
+
+  "block.plentifulindustries.blootonium_lamp": "Blootonium Lamp",
+
   "creativetab.plentifulindustries.blootonium_items": "Blootonium Items",
   "creativetab.plentifulindustries.blootonium_blocks": "Blootonium Blocks",
 

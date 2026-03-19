@@ -55,6 +55,8 @@ public class ModCreativeModeTabs {
                       output.accept(ModBlocks.BLOOTONIUM_DOOR.get());
                       output.accept(ModBlocks.BLOOTONIUM_TRAPDOOR.get());
 
+                      output.accept(ModBlocks.BLOOTONIUM_LAMP.get());
+
                     }).build());
 
     public static void register(IEventBus eventBus) {

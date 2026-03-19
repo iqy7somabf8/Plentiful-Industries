@@ -30,21 +30,23 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.RAW_BLOOTONIUM_BLOCK.get());
         dropSelf(ModBlocks.CONVERTER_BLOCK.get());
 
+
         dropSelf(ModBlocks.BLOOTONIUM_STAIRS.get());
         this.add(ModBlocks.BLOOTONIUM_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.BLOOTONIUM_SLAB.get()));
 
+
         dropSelf(ModBlocks.BLOOTONIUM_PRESSURE_PLATE.get());
         dropSelf(ModBlocks.BLOOTONIUM_BUTTON.get());
-
         dropSelf(ModBlocks.BLOOTONIUM_WALL.get());
         dropSelf(ModBlocks.BLOOTONIUM_FENCE.get());
         dropSelf(ModBlocks.BLOOTONIUM_FENCE_GATE.get());
-
         dropSelf(ModBlocks.BLOOTONIUM_TRAPDOOR.get());
+        dropSelf(ModBlocks.BLOOTONIUM_LAMP.get());
+
+
         this.add(ModBlocks.BLOOTONIUM_DOOR.get(),
                 block -> createDoorTable(ModBlocks.BLOOTONIUM_DOOR.get()));
-
         this.add(ModBlocks.BLOOTONIUM_ORE.get(),
                 block -> createOreDrop(ModBlocks.BLOOTONIUM_ORE.get(), ModItems.RAW_BLOOTONIUM.get()));
         this.add(ModBlocks.BLOOTONIUM_DEEPSLATE_ORE.get(),
