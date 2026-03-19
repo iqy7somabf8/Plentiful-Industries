@@ -1,5 +1,7 @@
 package net.xdbloo.plentifulIndustries.datagen;
 
+import net.minecraft.server.players.IpBanListEntry;
+import net.minecraft.world.item.Item;
 import net.xdbloo.plentifulIndustries.PlentifulIndustries;
 import net.xdbloo.plentifulIndustries.block.ModBlocks;
 import net.xdbloo.plentifulIndustries.item.ModItems;
@@ -33,6 +35,18 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItem(ModBlocks.BLOOTONIUM_DOOR);
 
 
+        handHeldItem(ModItems.BLOOTONIUM_SWORD);
+        handHeldItem(ModItems.BLOOTONIUM_PICKAXE);
+        handHeldItem(ModItems.BLOOTONIUM_AXE);
+        handHeldItem(ModItems.BLOOTONIUM_SHOVEL);
+        handHeldItem(ModItems.BLOOTONIUM_HOE);
+
+    }
+
+    private ItemModelBuilder handHeldItem(RegistryObject<Item> item){
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/handheld")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(PlentifulIndustries.MOD_ID, "item/" + item.getId().getPath()));
     }
 
     public void buttonItem(RegistryObject<? extends Block> block, RegistryObject<Block> baseBlock) {

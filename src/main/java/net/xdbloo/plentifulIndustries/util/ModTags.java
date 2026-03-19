@@ -10,6 +10,8 @@ import net.xdbloo.plentifulIndustries.PlentifulIndustries;
 
 public class ModTags {
     public static class Blocks {
+        public static final TagKey<Block> NEEDS_BLOOTONIUM_TOOL = createTag("needs_blootonium_tool");
+        public static final TagKey<Block> INCORRECT_FOR_BLOOTONIUM_TOOL = createTag("incorrect_for_blootonium_tool");
 
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(PlentifulIndustries.MOD_ID, name));

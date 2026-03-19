@@ -7,6 +7,12 @@
   "item.plentifulindustries.kohlrabi": "Kohlrabi",
   "item.plentifulindustries.catalyst": "Catalyst",
 
+  "item.plentifulindustries.blootonium_sword": "Blootonium Sword",
+  "item.plentifulindustries.blootonium_pickaxe": "Blootonium Pickaxe",
+  "item.plentifulindustries.blootonium_axe": "Blootonium Axe",
+  "item.plentifulindustries.blootonium_shovel": "Blootonium Shovel",
+  "item.plentifulindustries.blootonium_hoe": "Blootonium Hoe",
+
   "block.plentifulindustries.blootonium_block": "Block of Blootonium",
   "block.plentifulindustries.raw_blootonium_block": "Raw Block of Blootonium",
   "block.plentifulindustries.blootonium_ore": "Blootonium Ore",

@@ -27,6 +27,12 @@ public class ModCreativeModeTabs {
                       output.accept(ModItems.KOHLRABI.get());
                       output.accept(ModItems.CATALYST.get());
 
+                      output.accept(ModItems.BLOOTONIUM_SWORD.get());
+                      output.accept(ModItems.BLOOTONIUM_PICKAXE.get());
+                      output.accept(ModItems.BLOOTONIUM_SHOVEL.get());
+                      output.accept(ModItems.BLOOTONIUM_AXE.get());
+                      output.accept(ModItems.BLOOTONIUM_HOE.get());
+
                     }).build());
     public static final RegistryObject<CreativeModeTab> BLOOTONIUM_BLOCKS_TAB = CREATIVE_MODE_TABS.register("blootonium_blocks_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.BLOOTONIUM_BLOCK.get()))
@@ -56,6 +62,7 @@ public class ModCreativeModeTabs {
                       output.accept(ModBlocks.BLOOTONIUM_TRAPDOOR.get());
 
                       output.accept(ModBlocks.BLOOTONIUM_LAMP.get());
+
 
                     }).build());
 
